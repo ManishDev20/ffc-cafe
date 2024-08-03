@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google fonts */
+/* 
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO SECTION */
+
+#hero {
+  background: url("../public/img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* best seller food slider css */
+
+/* Our menu css */
+
+/* About us css */
+
+#about {
+  font-family: "Satisfy", cursive;
+  font-weight: 600;
+}
+
+#ffc_text {
+  font-family: "Great Vibes", cursive;
+}
