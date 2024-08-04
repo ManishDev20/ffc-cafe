@@ -11,17 +11,17 @@ import { RiSecurePaymentLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div id="footer" className="bg-[#111827] px-10 pt-[80px] lg:pt-5">
-      <section className="py-5 grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-4">
+    <div id="footer" className="bg-[#111827] px-5 pt-[80px] lg:pt-5">
+      <section className="py-5 grid gap-5 max-[765px]:grid-cols-1  max-[1025px]:grid-cols-2 min-[1026px]:grid-cols-4">
         <div className="col-span-1 flex flex-col gap-2 px-3 text-white">
-          <h1 className="text-2xl font-semibold uppercase flex items-center gap-2">
+          <h1 className="text-xl  font-semibold uppercase flex items-center gap-2">
             <IoMdContacts />
             Contact us
           </h1>
           <hr />
           <ul className="flex flex-col gap-2 px-2">
             <li className="flex  gap-2">
-              <IoLocationSharp className="text-2xl text-yellow-200  inline" />{" "}
+              <IoLocationSharp className="text-3xl text-yellow-200  inline" />{" "}
               Jaisinghpura Rd, Bhakrota, Rajasthan, India 302026
             </li>
             <li>
@@ -35,7 +35,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-span-1 flex flex-col gap-2 px-3 text-white">
-          <h1 className="text-2xl font-semibold uppercase flex items-center gap-2">
+          <h1 className="text-xl font-semibold uppercase flex items-center gap-2">
             <MdOutlineRestaurantMenu /> Our Menu
           </h1>
           <hr />
@@ -59,7 +59,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-span-1 flex flex-col gap-2 px-3 text-white">
-          <h1 className="text-2xl font-semibold uppercase flex items-center gap-2">
+          <h1 className="text-xl font-semibold uppercase flex items-center gap-2">
             <GrCafeteria /> Our Services
           </h1>
           <hr />
@@ -91,7 +91,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-span-1  flex flex-col gap-2 px-3 text-white">
-          <h1 className="text-2xl font-semibold uppercase flex items-center gap-2">
+          <h1 className="text-xl font-semibold uppercase flex items-center gap-2">
             <RiSecurePaymentLine />
             Payments
           </h1>
@@ -116,14 +116,11 @@ const Footer = () => {
           </ul>
         </div>
       </section>
-      <div className="w-[70%] text-sm py-5  ">
+      <div className="w-[90%] mx-auto text-[12px] text-center py-5  ">
         <p className="text-white ">
-          &copy; 2023 FFC CAFE Jaipur. All rights reserved.
+          &copy; 2023 FFC CAFE Jaipur. <br className="sm:hidden" /> All rights
+          reserved.
         </p>
-        <a
-          href="https://www.freepik.com/vectors/coffee-shop"
-          className="inline text-yellow-200 hover:text-yellow-400"
-        ></a>
       </div>
     </div>
   );

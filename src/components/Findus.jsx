@@ -52,9 +52,9 @@ const Findus = () => {
   return (
     <div
       id="findus"
-      className="h-screen max-[1025px]:h-[max-content] border-2 lg:pt-24"
+      className="h-screen max-[1025px]:h-[max-content] border-2 lg:pt-12"
     >
-      <h1 className="text-2xl p-5 font-semibold text-center lg:text-left lg:px-10 sm:text-3xl md:text-5xl">
+      <h1 className="text-2xl p-10 font-semibold text-center lg:text-left sm:text-3xl md:text-5xl">
         You can find us here!
       </h1>
       <section className="w-full min-[1025px]:grid lg:grid-cols-2 ">
