@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full top-0 z-10">
       {/* Hello world */}
-      <nav className="border-gray-200  bg-black sm:bg-[#00000090]">
+      <nav className="bg-black">
         <div className="max-w-screen-xl h-[80px] relative flex  items-center justify-between mx-auto px-4 md:px-10 py-2">
           <a
             href="#hero"

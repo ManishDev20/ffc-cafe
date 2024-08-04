@@ -33,7 +33,7 @@ const FfcVibe = () => {
     <div className="w-full max-h-max lg:h-screen relative pt-5 sm:py-0  bg-[#ffff0092] sm:bg-[#fff] broder ">
       <section
         id="fccvibe"
-        className="w-[90%] md:h-[90%] mx-auto md:mt-20 hidden sm:grid  sm:grid-cols-3 lg:grid-cols-5 p-5  "
+        className="w-[90%] md:h-[90%] mx-auto md:mt-20 hidden sm:grid border-2 sm:grid-cols-1  max-[1025px]:grid-cols-3 lg:grid-cols-5 p-5  "
       >
         <div className="sm:col-span-1 md:col-span-2  flex flex-col gap-5 p-2 ">
           <img
@@ -45,10 +45,10 @@ const FfcVibe = () => {
             onClick={ViewerHandler}
             src="./img/ffcimg7.png"
             alt=""
-            className="w-full h-[300px] rounded-xl "
+            className="w-full h-[300px] rounded-xl"
           />
         </div>
-        <div className="col-span-1 flex flex-col gap-5 p-2 ">
+        <div className="col-span-1 flex flex-col gap-5 p-2">
           <img
             onClick={ViewerHandler}
             src="./img/ffcimg1.png"
@@ -76,7 +76,7 @@ const FfcVibe = () => {
             className="w-full h-[60%] rounded-xl "
           />
         </div>
-        <div className="col-span-1 h-full flex flex-col gap-5 p-2">
+        <div className="col-span-1  max-[1025px]:col-span-1  h-full flex flex-col gap-5 p-2">
           <img
             onClick={ViewerHandler}
             src="./img/ffcimg5.png"
@@ -126,7 +126,7 @@ const FfcVibe = () => {
         </div>
       </section>
 
-      <div className="w-full flex items-center sm:justify-between gap-2 sm:gap-5 overflow-hidden sm:h-[150px] bg-[#4b1d0d] py-5 px-2 lg:px-10">
+      <div className="socialLabel w-full flex items-center sm:justify-between gap-2 sm:gap-5 overflow-hidden sm:h-[150px] bg-[#4b1d0d] py-5 px-2 lg:px-10">
         <h1 className=" text-3xl sm:text-5xl font-bold text-white">Follow</h1>
         <div className="w-[50%] lg:w-[70%] flex gap-2 sm:gap-5 items-center lg:justify-between px-4 ">
           <a href="https://www.instagram.com/ffc_cafe_jpr/">
