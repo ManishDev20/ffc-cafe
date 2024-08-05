@@ -6,13 +6,13 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const FfcVibe = () => {
   const FfcGallery = [
-    { id: 0, img: "./img/ffcimg1.png" },
-    { id: 1, img: "./img/ffcimg2.png" },
-    { id: 2, img: "./img/ffcimg3.png" },
-    { id: 3, img: "./img/ffcimg4.png" },
-    { id: 4, img: "./img/ffcimg5.png" },
-    { id: 5, img: "./img/ffcimg6.png" },
-    { id: 6, img: "./img/ffcimg7.png" },
+    { id: 0, img: "./img/ffcimg1.webp" },
+    { id: 1, img: "./img/ffcimg2.webp" },
+    { id: 2, img: "./img/ffcimg3.webp" },
+    { id: 3, img: "./img/ffcimg4.webp" },
+    { id: 4, img: "./img/ffcimg5.webp" },
+    { id: 5, img: "./img/ffcimg6.webp" },
+    { id: 6, img: "./img/ffcimg7.webp" },
   ];
   const [currentPic, setCurrentPic] = React.useState(0);
   const length = FfcGallery.length;
@@ -37,13 +37,13 @@ const FfcVibe = () => {
       >
         <div className="max-[1025px]:col-span-2 min-[1026px]:col-span-2 flex flex-col gap-5 p-2 ">
           <img
-            src="./img/ffcvibes.png"
+            src="./img/ffcvibes.webp"
             alt=""
             className="w-[500px] mx-auto drop-shadow-[5px_5px_2px_rgba(255,0,0,0.8)]"
           />
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg7.png"
+            src="./img/ffcimg7.webp"
             alt=""
             className="w-full h-[300px] rounded-xl"
           />
@@ -51,13 +51,13 @@ const FfcVibe = () => {
         <div className="max-[1025px]:col-span-1 min-[1026px]:col-span-1 flex flex-col gap-5 p-2">
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg1.png"
+            src="./img/ffcimg1.webp"
             alt=""
             className="w-full h-[60%] rounded-xl "
           />
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg2.png"
+            src="./img/ffcimg2.webp"
             alt=""
             className="w-full h-[40%] rounded-xl "
           />
@@ -65,13 +65,13 @@ const FfcVibe = () => {
         <div className="max-[1025px]:col-span-1 min-[1026px]:col-span-1 flex flex-col gap-5 p-2">
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg3.png"
+            src="./img/ffcimg3.webp"
             alt=""
             className="w-full h-[40%] rounded-xl "
           />
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg6.png"
+            src="./img/ffcimg6.webp"
             alt=""
             className="w-full h-[60%] rounded-xl "
           />
@@ -79,7 +79,7 @@ const FfcVibe = () => {
         <div className="max-[1025px]:col-span-2 min-[1026px]:col-span-1 flex flex-col gap-5 p-2">
           <img
             onClick={ViewerHandler}
-            src="./img/ffcimg5.png"
+            src="./img/ffcimg5.webp"
             alt=""
             className="w-full h-[100%] rounded-xl "
           />
@@ -88,7 +88,7 @@ const FfcVibe = () => {
       <section className="block sm:hidden">
         <div className="ffcVibe">
           <img
-            src="./img/ffcvibes.png"
+            src="./img/ffcvibes.webp"
             alt=""
             className="w-[90%] mx-auto my-5"
           />

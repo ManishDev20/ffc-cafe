@@ -6,35 +6,35 @@ const Findus = () => {
     {
       id: 0,
       name: "Findus",
-      img: "./img/user-1.jpg",
+      img: "./img/user-1.webp",
       review:
         "What to say,good location, good coffee, good music... Perfect place to have a coffee, read books, or simply chat with buddys",
     },
     {
       id: 1,
       name: "Ammu",
-      img: "./img/user-2.jpg",
+      img: "./img/user-2.webp",
       review:
         "This is a great cafe serving good cappuccino with a great brunch menu",
     },
     {
       id: 2,
       name: "Ashley",
-      img: "./img/user-3.jpg",
+      img: "./img/user-3.webp",
       review:
         "I would like to suggest everybody to visit whether come with family or friends",
     },
     {
       id: 3,
       name: "Sarah",
-      img: "./img/user-4.jpg",
+      img: "./img/user-4.webp",
       review:
         "Taste of everything is good. But never order anything which is preferred by cafe staff",
     },
     {
       id: 4,
       name: "Lisa",
-      img: "./img/user-5.jpg",
+      img: "./img/user-5.webp",
       review:
         " Penne pasta is a must try. Environment is very good. A must place to visit",
     },

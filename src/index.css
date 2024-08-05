@@ -41,7 +41,7 @@
 /* HERO SECTION */
 
 #hero {
-  background: url("../public/img/hero-bg.jpg");
+  background: url("../public/img/hero-bg.webp");
   background-size: cover;
   background-position: center;
 }

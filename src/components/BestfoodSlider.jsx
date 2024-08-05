@@ -3,14 +3,14 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const BestfoodSlider = () => {
   const foodImages = [
-    { id: 0, img: "./img/hakka-noddles.jpg", title: "Hakka Noodles" },
-    { id: 1, img: "./img/spring-roll.jpg", title: "Spring Roll" },
-    { id: 2, img: "./img/veg-burger.jpg", title: "FFC Burger" },
-    { id: 3, img: "./img/blue-mojito.jpg", title: "Virgin Mojito" },
-    { id: 4, img: "./img/veg-fried-rice.jpg", title: "Veg Fried Rice" },
-    { id: 5, img: "./img/veg-masala-maggie.jpg", title: "Masala Maggie" },
-    { id: 6, img: "./img/veg-pizza.jpg", title: "Special Veg Pizza" },
-    { id: 7, img: "./img/veg-sandwich.jpg", title: "Veg Sandwich" },
+    { id: 0, img: "./img/hakka-noddles.webp", title: "Hakka Noodles" },
+    { id: 1, img: "./img/spring-roll.webp", title: "Spring Roll" },
+    { id: 2, img: "./img/veg-burger.webp", title: "FFC Burger" },
+    { id: 3, img: "./img/blue-mojito.webp", title: "Virgin Mojito" },
+    { id: 4, img: "./img/veg-fried-rice.webp", title: "Veg Fried Rice" },
+    { id: 5, img: "./img/veg-masala-maggie.webp", title: "Masala Maggie" },
+    { id: 6, img: "./img/veg-pizza.webp", title: "Special Veg Pizza" },
+    { id: 7, img: "./img/veg-sandwich.webp", title: "Veg Sandwich" },
     { id: 8, img: "./img/veg-sizzler.webp", title: "FFC Sizzler" },
   ];
   const [current, setCurrent] = useState(0);

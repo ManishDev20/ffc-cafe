@@ -19,7 +19,7 @@ const AboutUs = () => {
               Friends & Family Cafe
             </h1>
             <img
-              src="./img/ffcimg4.png"
+              src="./img/ffcimg4.webp"
               alt=""
               className="w-full h-[500px] mx-auto sm:mx-0  rounded-2xl mt-5 lg:hidden"
             />
@@ -36,7 +36,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:w-[50%]  ">
             <img
-              src="./img/ffcimg4.png"
+              src="./img/ffcimg4.webp"
               alt=""
               className="mx-auto rounded-2xl hidden lg:block"
             />

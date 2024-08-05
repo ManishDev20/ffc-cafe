@@ -20,7 +20,7 @@
 //       >
 //         <div className="flex justify-between items-center shadow-sm  p-5">
 //           <img
-//             src="./img/ffclogonew.png"
+//             src="./img/ffclogonew.webp"
 //             alt="brandLogo"
 //             className="w-[50px] h-[50px]"
 //           />
@@ -51,7 +51,7 @@
 //               className="flex items-center space-x-3 rtl:space-x-reverse"
 //             >
 //               <img
-//                 src="./img/ffclogonew.png"
+//                 src="./img/ffclogonew.webp"
 //                 className="w-[60px] md:w-[80px] lg:w-[100px] h-[60px] md:h-[80px] lg:h-[100px]"
 //                 alt="Flowbite Logo"
 //               />
@@ -203,7 +203,7 @@ const Main = () => {
       items: [
         {
           title: "Tea",
-          img: "./img/tea-menu.png",
+          img: "./img/tea-menu.webp",
           dishes: [
             { name: "Simple Tea", price: 5 },
             { name: "Masala Tea", price: 10 },
@@ -238,7 +238,7 @@ const Main = () => {
       items: [
         {
           title: "Rolls",
-          img: "./img/roll-menu.png",
+          img: "./img/roll-menu.webp",
           dishes: [
             { name: "Veg. Roll", price: 0 },
             { name: "Spring Roll", price: 0 },
@@ -261,7 +261,7 @@ const Main = () => {
         },
         {
           title: "Sandwich",
-          img: "./img/sandwich-menu.png",
+          img: "./img/sandwich-menu.webp",
           dishes: [
             { name: "Veg Sandwich", price: 0 },
             { name: "Veg Grilled Sandwich", price: 0 },
@@ -277,7 +277,7 @@ const Main = () => {
       items: [
         {
           title: "Maggie",
-          img: "./img/maggie-menu.png",
+          img: "./img/maggie-menu.webp",
           dishes: [
             { name: "Plain Maggie", price: 0 },
             { name: "Masala Maggie", price: 0 },
@@ -286,7 +286,7 @@ const Main = () => {
         },
         {
           title: "Burger",
-          img: "./img/burger-menu.png",
+          img: "./img/burger-menu.webp",
           dishes: [
             { name: "Veg Burger", price: 0 },
             { name: "Cheese Burger", price: 0 },
@@ -294,7 +294,7 @@ const Main = () => {
         },
         {
           title: "Chinese",
-          img: "./img/chinese-menu.png",
+          img: "./img/chinese-menu.webp",
           dishes: [
             { name: "Veg Chowmine", price: 0 },
             { name: "Hakka Noodles", price: 0 },
