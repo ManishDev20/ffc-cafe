@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../Context/MainContext";
 
-const OurMenu = ({ menu }) => {
+const OurMenu = () => {
+  const { menu } = useContext(Context);
   if (!menu) {
     return <div className="h-80">We Are Loading Our Menu...</div>;
   }
@@ -45,7 +47,7 @@ const OurMenu = ({ menu }) => {
                       key={i}
                       className="px-3 mt-5 text-md sm:text-xl flex flex-col gap-2"
                     >
-                      <li className="flex justify-between gap-4">
+                      <li className="flex justify-between gap-4 hover:text-white hover:cursor-pointer">
                         <span>{dish.name}</span>
                         <span>{dish.price}rs</span>
                       </li>

@@ -9,10 +9,10 @@ const Hero = () => {
     <div>
       <section id="hero" className="w-full h-screen">
         <div className=" w-full text-center  pt-[200px] sm:pt-[150px] ">
-          <h1 className=" text-4xl sm:text-9xl py-4 font-bold text-white ">
+          <h1 className=" text-4xl sm:text-5xl md:text-7xl lg:text-9xl py-4 font-bold text-white min-[768px]:mt-40 min-[1024px]:mt-44 min-[1026px]:mt-0 ">
             GOOD MOOD
           </h1>
-          <h3 className=" text-[24px] sm:text-5xl  text-[#fff]">
+          <h3 className=" text-[24px] sm:text-5xl text-[#fff]">
             is sponsered by Coffee
           </h3>
           {/* <img
@@ -39,7 +39,7 @@ const Hero = () => {
               <span class="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
                 <FaMapMarkerAlt className=" sm:text-[20px] lg:text-[25px] ml-4 sm:ml-0" />
               </span>
-              <span class="relative mx-4">Find us</span>
+              <span class="relative mx-4">Visit us</span>
             </a>
           </div>
         </div>

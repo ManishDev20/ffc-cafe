@@ -42,19 +42,27 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 px-2">
             <li>
               <GrFormNextLink className="inline text-yellow-200 mr-2" />
-              <a href="#ourMenu">Coffee</a>
+              <a href="#ourMenu " className="hover:text-blue-500">
+                Coffee
+              </a>
             </li>
             <li>
               <GrFormNextLink className="inline text-yellow-200 mr-2" />
-              <a href="#ourMenu">Shakes</a>
+              <a href="#ourMenu" className="hover:text-blue-500">
+                Shakes
+              </a>
             </li>
             <li>
               <GrFormNextLink className="inline text-yellow-200 mr-2" />
-              <a href="#ourMenu">Pizza</a>
+              <a href="#ourMenu" className="hover:text-blue-500">
+                Pizza
+              </a>
             </li>
             <li>
               <GrFormNextLink className="inline text-yellow-200 mr-2" />
-              <a href="#ourMenu">Chinese</a>
+              <a href="#ourMenu" className="hover:text-blue-500">
+                Chinese
+              </a>
             </li>
           </ul>
         </div>

@@ -5,9 +5,9 @@ import BestfoodSlider from "./BestfoodSlider";
 
 const BestSeller = () => {
   return (
-    <div className="w-full max-[1025px]:h-[max-content] min-[1026px]:h-screen bg-[#ffd620] text-white py-5 md:py-10 ">
-      <section id="bestSeller" className="w-[90%]  mx-auto  relative">
-        <div className="w-[90%] mx-auto text-center py-5 flex flex-col gap-5">
+    <div className="w-full max-h-max bg-[#ffd620] text-white py-10 ">
+      <section id="bestSeller" className="w-[90%]  mx-auto  relative ">
+        <div className="w-[90%] mx-auto text-center  flex flex-col gap-5">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold">
             Best Seller
           </h1>

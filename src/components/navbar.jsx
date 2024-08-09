@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BiCoffeeTogo } from "react-icons/bi";
 import { MdOutlineMenu } from "react-icons/md";
 
 const Navbar = () => {
   const [isNavbar, setIsNavbar] = React.useState(false);
   const toggleNavbar = () => setIsNavbar(!isNavbar);
+
+  const closeMenu = (e) => {
+    if (isNavbar && !e.target.closest(".Navbar")) {
+      setIsNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeMenu);
+    return () => {
+      document.removeEventListener("click", closeMenu);
+    };
+  }, [isNavbar]);
   return (
     <div className="fixed w-full top-0 z-10">
       {/* Hello world */}
-      <nav className="bg-black">
+      <nav className="Navbar bg-black md:bg-[#000000a4]">
         <div className="max-w-screen-xl h-[80px] relative flex  items-center justify-between mx-auto px-4 md:px-10 py-2">
           <a
             href="#hero"
@@ -51,7 +64,7 @@ const Navbar = () => {
                     toggleNavbar();
                   }}
                   href="#footer"
-                  className="block py-2 px-3 text-[#b5b5b5] hover:text-black rounded hover:bg-gray-100 "
+                  className="block py-2 px-3 text-[#e0d6d6] hover:text-black rounded hover:bg-gray-100 "
                 >
                   Services
                 </a>
@@ -62,7 +75,7 @@ const Navbar = () => {
                     toggleNavbar();
                   }}
                   href="#ourMenu"
-                  className="block py-2 px-3 text-[#8f8f8f] hover:text-black rounded hover:bg-gray-100"
+                  className="block py-2 px-3 text-[#e0d6d6] hover:text-black rounded hover:bg-gray-100"
                 >
                   Our Menu
                 </a>
@@ -73,7 +86,7 @@ const Navbar = () => {
                     toggleNavbar();
                   }}
                   href="#footer"
-                  className="block py-2 px-3 text-[#8f8f8f] hover:text-black rounded hover:bg-gray-100 "
+                  className="block py-2 px-3 text-[#e0d6d6] hover:text-black rounded hover:bg-gray-100 "
                 >
                   Contact
                 </a>
@@ -86,13 +99,13 @@ const Navbar = () => {
                     }, 1000);
                   }}
                   href="https://www.swiggy.com/city/jaipur/ffc-cafe-chora-sadatpur-mansarovar-extension-rest799530?is_retargeting=true&media_source=GooglePlaceOrder&utm_campaign=GoogleMap&utm_source=GooglePlaceOrder"
-                  class="relative inline-flex items-center my-5 px-2 md:px-8 lg:px-12 py-2 md:py-3 overflow-hidden text-sm lg:text-lg font-medium text-white border-2 border-white rounded-full hover:text-white group hover:bg-gray-50"
+                  className="relative inline-flex items-center my-5 px-2 md:px-8 lg:px-12 py-2 md:py-3 overflow-hidden text-sm lg:text-lg font-medium text-white border-2 border-white rounded-full hover:text-white group hover:bg-gray-50"
                 >
-                  <span class="absolute left-0 block w-full h-0 transition-all bg-[#38b6ff] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                  <span class="absolute  right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
+                  <span className="absolute left-0 block w-full h-0 transition-all bg-[#38b6ff] opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
+                  <span className="absolute  right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
                     <BiCoffeeTogo className="text-[18px] sm:text-[20px] lg:text-[25px] ml-4 sm:ml-0" />
                   </span>
-                  <span class="relative px-4 sm:px-0">Order Now</span>
+                  <span className="relative px-4 sm:px-0">Order Now</span>
                 </a>
               </li>
             </ul>

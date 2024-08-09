@@ -1,18 +1,18 @@
 import React from "react";
 
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Slider from "react-slick";
 const Findus = () => {
   const userImages = [
     {
       id: 0,
-      name: "Findus",
+      name: "Prem",
       img: "./img/user-1.webp",
       review:
         "What to say,good location, good coffee, good music... Perfect place to have a coffee, read books, or simply chat with buddys",
     },
     {
       id: 1,
-      name: "Ammu",
+      name: "Pooja",
       img: "./img/user-2.webp",
       review:
         "This is a great cafe serving good cappuccino with a great brunch menu",
@@ -39,26 +39,24 @@ const Findus = () => {
         " Penne pasta is a must try. Environment is very good. A must place to visit",
     },
   ];
-  const [current, setCurrent] = React.useState(0);
-  const length = userImages.length;
-
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
-
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const settings = {
+    dots: true,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    pauseOnHover: false,
+    draggable: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
   return (
-    <div
-      id="findus"
-      className="h-screen max-[1025px]:h-[max-content] border-2 lg:pt-12"
-    >
+    <div id="findus" className="h-screen max-[1025px]:h-[max-content] lg:pt-12">
       <h1 className="text-2xl p-10 font-semibold text-center lg:text-left sm:text-3xl md:text-5xl">
         You can find us here!
       </h1>
-      <section className="w-full min-[1025px]:grid lg:grid-cols-2 ">
-        <div className="map sm:col-span-1 flex items-center justify-center px-5 ">
+      <section className="w-full min-[1025px]:grid grid-cols-5 ">
+        <div className="map col-span-3 flex items-center justify-center px-5 ">
           <iframe
             title="FFC G Map"
             className="w-full h-[300px] sm:h-[400px] md:h-[500px] shadow-lg"
@@ -67,47 +65,69 @@ const Findus = () => {
             <a href="https://www.gps.ie/">gps trackers</a>
           </iframe>
         </div>
-        <div className="review sm:col-span-1 flex items-center">
-          <div className="relative w-[100%] md:w-[90%] lg:w-[70%] h-[300px] sm:h-[400px] md:h-[450px]  flex items-center  mx-auto overflow-hidden p-4 ">
-            <div
-              className="w-full  flex transition-transform duration-700 ease-in-out "
-              style={{ transform: `translateX(-${current * 100}%)` }}
-            >
+        <div className="review col-span-2">
+          <div className=" flex items-center w-[80%] md:w-[60%] lg:w-[70%] h-[300px] sm:h-[400px] md:h-[450px]   mx-auto overflow-hidden p-4 ">
+            <Slider {...settings} className="w-full mx-auto shadow-lg p-2 ">
               {userImages.map((user, index) => (
-                <div
-                  key={index}
-                  className="min-w-full h-[250px] sm:h-[300px] md:h-[350px] relative flex justify-center  p-2"
-                >
-                  <div className="w-[90%] md:w-[80%] h-[200px] sm:h-[250px] md:h-[300px]  bg-[#111827] text-white shadow-md shadow-yellow-300  border-2 border-yellow-500 rounded-2xl relative p-5 ">
-                    <p className="text-sm sm:text-md md:text-lg lg:text-xl text-center absolute top-5 left-0 px-2">
-                      " {user.review} "
-                    </p>
-                    <div className="flex items-center justify-center gap-5 absolute bottom-5">
-                      <img
-                        src={user.img}
-                        alt=""
-                        className="w-10 sm:w-12 md:w-16 h-10 sm:h-12 md:h-16 rounded-full"
-                      />{" "}
-                      <span className="text-sm sm:text-md md:text-lg lg:text-xl text-[yellow] font-semibold">
-                        | {user.name}
-                      </span>
+                <>
+                  <div key={index} className="flex items-center gap-4 ">
+                    <img
+                      alt=""
+                      src={user.img}
+                      className="size-14 rounded-full object-cover"
+                    />
+                    <div>
+                      <div className="flex justify-center gap-0.5 text-green-500">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-5 w-5"
+                          viewBox="0 0 20 20"
+                          fill="currentColor"
+                        >
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      </div>
+                      <p className="mt-0.5 text-lg font-medium text-[#2c80ff]">
+                        {user.name}
+                      </p>
                     </div>
                   </div>
-                </div>
+                  <p className="mt-4 text-gray-700 px-2">{user.review}</p>
+                </>
               ))}
-            </div>
-            <button
-              className="absolute top-1/2 left-3 sm:left-4 transform -translate-y-1/2 bg-[#000000ab] text-white rounded-full p-1 sm:p-2 text-[10px] sm:text-[14px]"
-              onClick={prevSlide}
-            >
-              <FaArrowLeft />
-            </button>
-            <button
-              className="absolute top-1/2 right-3 sm:right-4 transform -translate-y-1/2 bg-[#000000ab] text-white rounded-full p-1 sm:p-2 text-[10px] sm:text-[14px]"
-              onClick={nextSlide}
-            >
-              <FaArrowRight />
-            </button>
+            </Slider>
           </div>
         </div>
       </section>

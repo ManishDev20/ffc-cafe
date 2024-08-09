@@ -21,7 +21,7 @@ const AboutUs = () => {
             <img
               src="./img/ffcimg4.webp"
               alt=""
-              className="w-full h-[500px] mx-auto sm:mx-0  rounded-2xl mt-5 lg:hidden"
+              className="w-full h-[400px] sm:h-[500px] mx-auto sm:mx-0  rounded-2xl mt-5 lg:hidden"
             />
             <p className="text-justify my-10 md:my-16 text-xl px-3 md:px-2">
               At Friends & Family cafe, we believe that great moments in life
